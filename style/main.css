@@ -1,0 +1,525 @@
+@import 'font.css';
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'irish';
+}
+
+.wrapper {
+    background: url(../images/bg.png)no-repeat center /cover black;
+    height: 300vh;
+
+}
+
+.nav {
+    max-width: 1140px;
+    padding  : 35px 15px 50px;
+    margin   : auto;
+    width    : 100%;
+}
+
+.headar__title {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    margin-bottom  : 32px;
+}
+
+.headar__title p {
+    color         : #EBFF00;
+    font-size     : 64px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.headar__title p span {
+    color    : white;
+    font-size: 128px;
+}
+
+h1 {
+    color     : #FBC400;
+    text-align: center;
+    font-size : 80px;
+}
+
+.main {
+    position: relative;
+}
+
+.card {
+    border-radius     : 41px;
+    background        : rgba(217, 217, 217, 0.40);
+    padding           : 33px;
+    display           : flex;
+    flex-wrap         : wrap;
+    justify-content   : space-between;
+    gap               : 44px;
+    transition        : 300ms;
+    /* opacity        : 0; */
+}
+
+.main__card {
+    width        : 300px;
+    border-radius: 32px;
+    height       : 390px;
+    cursor       : pointer;
+}
+
+.mb1 {
+    background: url(../images/cola.png)no-repeat center/cover;
+}
+
+.mb2 {
+    background: url(../images/pepsi.png)no-repeat center/cover;
+}
+
+.mb3 {
+    background: url(../images/fanta.png)no-repeat center/cover;
+}
+
+.mb4 {
+    background: url(../images/sprite.png)no-repeat center/cover;
+}
+
+.mb5 {
+    background: url(../images/7up.png)no-repeat center/cover;
+}
+
+.mb6 {
+    background: url(../images/redbul.png)no-repeat center/cover;
+}
+
+.product {
+    border-radius     : 41px;
+    /* background     : url(../images/cola.png)no-repeat center/cover, lightgray 50%; */
+    background        : rgba(0, 0, 0, 0.666);
+    backdrop-filter   : blur(10px);
+    padding           : 88px 88px 36px;
+    opacity           : 1;
+    top               : 0%;
+    left              : 0%;
+    /* height         : 0;
+    width             : 0; */
+    /* transform      : scale(0); */
+    overflow          : hidden;
+    position          : absolute;
+    transition        : 300ms;
+
+}
+
+.product__controll {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    user-select    : none;
+}
+
+.product__controll_btn {
+    margin-right: 22px;
+}
+
+.product__controll_btn span,
+.product__controll_btn button {
+    color     : #FFF;
+    font-size : 80px;
+    cursor    : pointer;
+    background: none;
+    border    : none;
+    outline   : none;
+}
+
+.product__controll_btn span {
+    background: #D9D9D9;
+    padding   : 12px 62px;
+    margin    : 0 30px;
+    color     : black;
+    cursor    : auto;
+
+}
+
+.product__controll_btns:disabled {
+    opacity: 0.2;
+}
+
+.product__controll_price {
+    color    : #FFF;
+    font-size: 64px;
+}
+
+
+.product__controll_check {
+    display       : flex;
+    flex-direction: column;
+    margin        : 92px 0 30px;
+    gap           : 20px;
+    color         : white;
+}
+
+.product__controll_check input {
+    margin-right: 50px;
+    color       : #FFF;
+    width       : 50px;
+    height      : 50px;
+}
+
+input[type="radio"] {
+    position          : relative;
+    width             : 50px;
+    height            : 50px;
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+    outline           : none;
+
+}
+
+
+input[type='radio']::before {
+    content         : '';
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    transform       : translate(-50%, -50%);
+    background-color: white;
+    border          : 2px solid #272727;
+}
+
+input[type='radio']:checked::after {
+    content         : '';
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    width           : 40px;
+    height          : 40px;
+    border-radius   : 50%;
+    background-color: #272727;
+    transform       : translate(-50%, -50%);
+    visibility      : visible;
+}
+
+.product__controll_check label {
+    font-size: 64px;
+}
+
+
+.product__controll_info {
+    color    : #FFF;
+    font-size: 48px;
+}
+
+.product__controll_box {
+    display        : flex;
+    justify-content: end;
+}
+
+.product__controll_link ,.main__btn {
+    border-radius   : 50px;
+    background      : #FAFF00;
+    color           : #030303;
+    font-size       : 64px;
+    padding         : 15px 165px;
+    margin-top      : 55px;
+    display         : flex;
+    width           : max-content;
+    /* width        : 100%; */
+}
+
+
+.main__btn{
+    margin: 20px  auto 0 ;
+    cursor: pointer;
+}
+.zakaz_btn{
+    margin: 20px  auto 0 ;
+    cursor: pointer; 
+    border-radius   : 50px;
+    background      : #FAFF00;
+    color           : #030303;
+    font-size       : 64px;
+    padding         : 15px 165px;
+    margin-top      : 55px;
+    display         : none;
+    width           : max-content;
+}
+
+
+.check__price{
+    background: #FFF;
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    display: none; 
+    border-radius: 8px;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+
+.chech__price-products{
+    padding: 20px;  
+    width: 100%;
+    
+
+}
+
+.check__price-title{
+    text-align: center;
+    /* font-size: 20px; */
+}
+.check__pirce-btn{
+    font-size: 35px;
+    border-radius   : 50px;
+    background      : #FAFF00;
+    color           : #030303;
+
+    padding         : 15px 165px;
+    margin-top      : 55px;
+    display         : flex;
+    width           : max-content;
+    margin: auto;
+    cursor: pointer;
+}
+.price_back{
+    display: flex;
+}
+
+
+.check__product-backBtn{
+    font-size: 25px;
+    border-radius   : 50px;
+    background      : #FAFF00;
+    color           : #030303;
+    width: max-content;
+    padding         : 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.umumiySumma {
+    text-align: right;
+}
+.nazat{
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width:500px) {
+    .nazat{
+        width: 25px;
+        height: 25px;
+    }
+    .check__product-backBtn{
+        padding: 10px;
+    }
+    .card{
+        width: 100%;
+        padding: 15px;
+        gap: 24px;
+        justify-content: center;
+        border-radius: 20px;
+        margin: auto;
+    }
+    .headar__title h1{
+        font-size:  35px;
+    }
+    .headar__title  p span{
+        font-size:  60px;
+    }
+    .headar__title  p {
+        font-size:  45px;
+    }
+
+    .zakaz_btn {
+        font-size: 30px;
+
+        padding: 15px 100px;
+    }
+    .main__card{
+        width: 28%;
+        height: 150px;
+        border-radius: 16px;
+    } 
+
+    .product{
+        width: 100%;
+        padding           : 30px 30px 20px;
+    }
+    .product__controll_btn span{
+        padding: 10px 25px;
+        margin: 0 15px;
+    }
+    .product__controll_btn{
+        display: flex;
+        margin-right: 15px;
+    }
+    .product__controll_price{
+        font-size: 28px;
+    }
+    .product__controll_btn span ,
+    .product__controll_btn button 
+    {
+        font-size: 30px;
+       
+    }
+    input[type='radio']::before{
+        width: 25px;
+        height: 25px;
+    }
+    input[type='radio']:checked::after {
+        width: 25px;
+        height: 25px;
+
+    }
+    input[type='radio']{
+        margin-right: 10px;
+    }
+    .product__controll_check{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .product__controll_check label{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+.product__controll_info{
+    font-size: 25px;
+}
+.product__controll_link, .main__btn{
+    margin-top: 20px;
+    font-size: 30px;
+    width: 100px;
+    padding: 10px 90px;
+}
+
+.check__price{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    left: 43px;
+    padding: 10px;
+}
+.check__pirce-btn{
+    padding: 15px 80px;
+} 
+
+.check__products-title, .check__products-amouts ,.check__products-price ,.umumiySumma{
+    font-size: 16px;
+    width: 122px;
+}
+
+.umumiySumma{
+    width: 130px;
+    margin-bottom: 10px;
+}
+        
+}
+
+@media (max-width:400px) {
+    .card{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        height: 100%;
+    }
+    .main__card{
+        width: 45%;
+        height: 200px;
+    }
+    .product__controll_info{
+        font-size: 20px;
+    }
+
+    .product__controll_price {
+        font-size: 18px;
+    }
+    .product__controll_link, .main__btn{
+        margin-top: 15px;
+        font-size: 25px;
+        width: 100px;
+        padding: 10px 70px;
+    }
+    .headar__title h1{
+        font-size:  25px;
+    }
+    .headar__title  p span{
+        font-size:  40px;
+    }
+    .headar__title  p {
+        font-size:  35px;
+    }
+    .zakaz_btn {
+        font-size: 25px;
+
+        padding: 15px 80px;
+    }
+    .nav{
+        padding: 35px 15px 30px;
+    }
+    .check__price{
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        left: 43px;
+        padding: 10px;
+    }
+    .check__pirce-btn{
+        padding: 10px 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
